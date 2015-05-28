@@ -20,6 +20,23 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func helloWorld(sender: UIButton) {
+        
+        var storyboard = UIStoryboard(name: "HelloWorld", bundle: nil)
+        var controller = storyboard.instantiateViewControllerWithIdentifier("HelloWorld") as! UIViewController
+        self.presentViewController(controller, animated: true, completion: nil)
+        
+    }  
 
+    @IBAction func CIO(sender: AnyObject) {
+        
+        var storyboard = UIStoryboard(name: "countInOut", bundle: nil)
+        
+        var controller = storyboard.instantiateViewControllerWithIdentifier("CountInOut") as! UIViewController
+        
+        self.presentViewController(controller, animated: true, completion: nil)
+        
+    }
+   
 }
 

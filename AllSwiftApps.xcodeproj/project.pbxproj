@@ -7,12 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A5631C71B16BC4C001A37A3 /* countInOut.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A5631C61B16BC4C001A37A3 /* countInOut.storyboard */; };
+		5A5631C91B16BC63001A37A3 /* countInOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5631C81B16BC63001A37A3 /* countInOut.swift */; };
 		5AC234D91B1592EC00862AF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC234D81B1592EC00862AF0 /* AppDelegate.swift */; };
 		5AC234DB1B1592EC00862AF0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC234DA1B1592EC00862AF0 /* ViewController.swift */; };
 		5AC234DE1B1592EC00862AF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AC234DC1B1592EC00862AF0 /* Main.storyboard */; };
 		5AC234E01B1592EC00862AF0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AC234DF1B1592EC00862AF0 /* Images.xcassets */; };
 		5AC234E31B1592EC00862AF0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5AC234E11B1592EC00862AF0 /* LaunchScreen.xib */; };
 		5AC234EF1B1592EC00862AF0 /* AllSwiftAppsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC234EE1B1592EC00862AF0 /* AllSwiftAppsTests.swift */; };
+		5AC234FB1B1595C600862AF0 /* HelloWorld.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AC234FA1B1595C600862AF0 /* HelloWorld.storyboard */; };
+		5AC234FE1B15960300862AF0 /* HelloWorld.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC234FD1B15960300862AF0 /* HelloWorld.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5A5631C61B16BC4C001A37A3 /* countInOut.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = countInOut.storyboard; sourceTree = "<group>"; };
+		5A5631C81B16BC63001A37A3 /* countInOut.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = countInOut.swift; sourceTree = "<group>"; };
 		5AC234D31B1592EC00862AF0 /* AllSwiftApps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AllSwiftApps.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AC234D71B1592EC00862AF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5AC234D81B1592EC00862AF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +42,8 @@
 		5AC234E81B1592EC00862AF0 /* AllSwiftAppsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AllSwiftAppsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AC234ED1B1592EC00862AF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5AC234EE1B1592EC00862AF0 /* AllSwiftAppsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllSwiftAppsTests.swift; sourceTree = "<group>"; };
+		5AC234FA1B1595C600862AF0 /* HelloWorld.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HelloWorld.storyboard; sourceTree = SOURCE_ROOT; };
+		5AC234FD1B15960300862AF0 /* HelloWorld.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelloWorld.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5A5631B71B16B60A001A37A3 /* CountInOut */ = {
+			isa = PBXGroup;
+			children = (
+				5A5631C61B16BC4C001A37A3 /* countInOut.storyboard */,
+				5A5631C81B16BC63001A37A3 /* countInOut.swift */,
+			);
+			name = CountInOut;
+			sourceTree = "<group>";
+		};
 		5AC234CA1B1592EC00862AF0 = {
 			isa = PBXGroup;
 			children = (
@@ -77,6 +94,8 @@
 		5AC234D51B1592EC00862AF0 /* AllSwiftApps */ = {
 			isa = PBXGroup;
 			children = (
+				5A5631B71B16B60A001A37A3 /* CountInOut */,
+				5AC234FC1B1595D500862AF0 /* HelloWorld */,
 				5AC234D81B1592EC00862AF0 /* AppDelegate.swift */,
 				5AC234DA1B1592EC00862AF0 /* ViewController.swift */,
 				5AC234DC1B1592EC00862AF0 /* Main.storyboard */,
@@ -110,6 +129,15 @@
 				5AC234ED1B1592EC00862AF0 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5AC234FC1B1595D500862AF0 /* HelloWorld */ = {
+			isa = PBXGroup;
+			children = (
+				5AC234FA1B1595C600862AF0 /* HelloWorld.storyboard */,
+				5AC234FD1B15960300862AF0 /* HelloWorld.swift */,
+			);
+			name = HelloWorld;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,9 +220,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AC234FB1B1595C600862AF0 /* HelloWorld.storyboard in Resources */,
 				5AC234DE1B1592EC00862AF0 /* Main.storyboard in Resources */,
 				5AC234E31B1592EC00862AF0 /* LaunchScreen.xib in Resources */,
 				5AC234E01B1592EC00862AF0 /* Images.xcassets in Resources */,
+				5A5631C71B16BC4C001A37A3 /* countInOut.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,7 +243,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5AC234DB1B1592EC00862AF0 /* ViewController.swift in Sources */,
+				5AC234FE1B15960300862AF0 /* HelloWorld.swift in Sources */,
 				5AC234D91B1592EC00862AF0 /* AppDelegate.swift in Sources */,
+				5A5631C91B16BC63001A37A3 /* countInOut.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +441,7 @@
 				5AC234F41B1592EC00862AF0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5AC234F51B1592EC00862AF0 /* Build configuration list for PBXNativeTarget "AllSwiftAppsTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +450,7 @@
 				5AC234F71B1592EC00862AF0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
