@@ -38,5 +38,15 @@ class ViewController: UIViewController {
         
     }
    
+    @IBAction func counterTimer(sender: AnyObject) {
+        
+        var storyboard = UIStoryboard(name: "CounterTimer", bundle: nil)
+        
+        var controller = storyboard.instantiateViewControllerWithIdentifier("countertimer") as! UIViewController
+        
+        self.presentViewController(controller, animated: true, completion: nil)
+        
+        
+    }
 }
 

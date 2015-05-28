@@ -30,6 +30,9 @@
                                 <state key="normal" title="Counter Timer">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="counterTimer:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="9Qk-Za-htB"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wQt-KV-h82">
                                 <rect key="frame" x="16" y="148" width="86" height="30"/>
