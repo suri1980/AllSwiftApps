@@ -22,31 +22,41 @@ class ViewController: UIViewController {
 
     @IBAction func helloWorld(sender: UIButton) {
         
-        var storyboard = UIStoryboard(name: "HelloWorld", bundle: nil)
-        var controller = storyboard.instantiateViewControllerWithIdentifier("HelloWorld") as! UIViewController
-        self.presentViewController(controller, animated: true, completion: nil)
+        callStoryboard("HelloWorld", storyboardID: "HelloWorld")
         
     }  
 
     @IBAction func CIO(sender: AnyObject) {
         
-        var storyboard = UIStoryboard(name: "countInOut", bundle: nil)
+        callStoryboard("countInOut", storyboardID: "CountInOut")
         
-        var controller = storyboard.instantiateViewControllerWithIdentifier("CountInOut") as! UIViewController
-        
-        self.presentViewController(controller, animated: true, completion: nil)
         
     }
    
     @IBAction func counterTimer(sender: AnyObject) {
         
-        var storyboard = UIStoryboard(name: "CounterTimer", bundle: nil)
+        callStoryboard("CounterTimer", storyboardID: "countertimer")
         
-        var controller = storyboard.instantiateViewControllerWithIdentifier("countertimer") as! UIViewController
+    }
+    @IBAction func SimpleTable(sender: AnyObject) {
+        
+        callStoryboard("ShowTable", storyboardID: "SimpleTable")
+        
+    }
+    
+    @IBAction func Calculator(sender: AnyObject) {
+                println("test")
+        callStoryboard("Calculator", storyboardID: "CalculatorStoryBoard")
+    }
+    func callStoryboard(storyboardName: String, storyboardID:String){
+        
+        var storyboard = UIStoryboard(name: storyboardName, bundle: nil)
+        
+        var controller = storyboard.instantiateViewControllerWithIdentifier(storyboardID) as! UIViewController
         
         self.presentViewController(controller, animated: true, completion: nil)
         
-        
     }
+    
 }
 
